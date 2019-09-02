@@ -6,7 +6,7 @@
 	</head>
 	<body class="body">
 		<div class="container" >
-			<form action="index.php" method="post">
+			<form action="<?php echo base_url(); ?>home/submit" method="post">
 				<label style="position: center; color:red"></label>
 				<input type="email" name="email" class="input1"placeholder="enter your email" style="color: white;" ><br>
 				<input type="Password" name="password" class="input2" placeholder="enter Password" style="color: white;" ><br>
