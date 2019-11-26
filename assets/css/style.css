@@ -1,135 +1,161 @@
-.container{
-	background: rgba(0,0,0,0.7);
-	width: 500px;
-	height: 500px;
-	margin: auto;
-    margin-top: 10%;
-    border-radius: 250px;
-    box-sizing: border-box;
+
+/********* =========== Styles for home page ******************/
+body{
+font-family: 'Roboto Condensed', sans-serif;
+background: #FAFAFA 0% 0% no-repeat padding-box;
+opacity: 1;
+overflow-y: hidden;
+}
+
+.homeLeft{
+top: -11px;
+left: -159px;
+position: relative;
+width: 100%;
+min-height: 760px;
+background: url('../img/home_banner.png');
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+
 
 
 }
-.body{
-	
-	background-image: url("../img/img.jpg");
-	}
-	body{
-		padding: 0;
-	margin: 0;
-	}
-	.input1{
-		background: rgba(50,205,50,0.1);
-		box-sizing: border-box;
-		margin-top: 130px;
-		margin-left: 120px;
-		width: auto;
-		font-size: 25px;
-        height: 50px;
-        border-radius:50px;
-        border: solid green 1px;
+
+.homeLeft:after{
+
+content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(222deg, #FFFFFFE6 0%, #000000E6 100%);
+  opacity: 0.8;
+  z-index: 5;
+
 }
-	.input2{
-		background: rgba(50,205,50,0.1);
-margin-top: 70px;
-margin-left: 120px;
-width: auto;
+
+.logo{
+margin-top: 80px;
+margin-left: 40px;
+color: #FAFAFA;
+position: relative;
+z-index: 10;
 font-size: 25px;
-height: 45px;
-border-radius: 50px;
-border: solid green 1px;
-	}
-	.img{
-		border-radius: 200px;
-		position: absolute;
-		top:80px; 
-		right:46%;
+/*UI Properties 
+background: transparent url('../img/wordlogo.png') 0% 0% no-repeat padding-box;
+
+*/
+}
+
+.divLogin{
+	margin-top: 100px;
+	right: -100px;
+	float:right;
+	width: 215px;
+	height: 84px;
+	z-index: 9;
+	position: relative;
+	background: #FAFAFA 0% 0% no-repeat padding-box;
+	border-radius: 10px;
+	opacity: 1;
+}
+.textLogin{
+margin-top: 25px;
+margin-left: 50px;
+width: 61px;
+height: 33px;
+text-align: left;
+font: Regular 25px/33px Roboto Condensed;
+letter-spacing: 0;
+color: #6D6D6D;
+opacity: 1;
+}
+
+.homeRight{
 	
-		
-	}
-	.btn1{
-		background:#008000;
-		border: solid green 1px;
-		margin-left: 125px;
-		margin-top: 100px;
-		border-radius: 50px;
-		width: 100px;
-		height: 50px;
-		cursor: pointer;
-	}
-	.btn2{
-		background: #008000;
-		border: solid green 1px;
-		margin-left: 55px;
-		border-radius: 50px;
-		width: 100px;
-		height: 50px;
-		cursor: pointer;
-		
-	}
-.btn2:hover{
-	opacity: 0.5;
 }
 
-.btn1:hover{
-	opacity: 0.5;
-}
- 
- .anchor{
- 	text-decoration: none;
- 	margin-left: 190px;
- 	font-size: 20px;
+.welcomeDiv{
+margin-top: 80px;
+
+margin-left: 150px;
 
 }
-   
-       
 
-.forgot{
-	width: 400px;
-	height: 300px;
-	background: #eee;
-	margin: auto;
-	margin-top: 10%;
-	box-sizing: border-box;
-}
-
-.inputF{
-	margin-left: 70px;
-	margin-top: 50px;
-		background: rgba(50,205,50,0.2);
-
-width: auto;
-font-size: 25px;
-height: 45px;
-border-radius: 50px;
-border: solid green 1px;
-}
-		
-.login{
-	background: #008000;
-		border: solid green 1px;
-		margin-left: 50px;
-		margin-top: 70px;
-		border-radius: 50px;
-		width: 100px;
-		height: 50px;
-		cursor: pointer;
+.welcome{
+	/*ui properties */
+	text-align: left;
+	font: Regular 55px/73px Roboto Condensed;
+	letter-spacing: 0;
+	font-size: 50px;
+	color: #484848;
+	opacity: 1;
 }
 
-.reset{
-	background:#008000;
-		border: solid green 1px;
-		margin-left: 110px;
-		
-		border-radius: 50px;
-		width: 100px;
-		height: 50px;
-		cursor: pointer;
+.welcomeMsg{
+	color: #8E8E8E;
+	margin-top: -10px;
 }
 
-.login:hover{
-	opacity: 0.5;
+.loginDiv{
+	margin-top: 25px;
+	width: 550px;
+	height: 350px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+
+	box-shadow: 0px 2px 10px #21212129;
+border-radius: 10px;
 }
-.reset:hover{
-	opacity: 0.5;
+
+.loginForm{
+	position: absolute;
+
+margin-top: 10%;
+
+margin-left: 12%;
 }
+
+.form-group{
+	padding:10px;
+  	border:1px solid;
+  	margin:10px;
+  	border-color: #484848;
+  	border-radius: 10px;
+  	width: 400px;
+
+}
+
+.form-group>label{
+  position: absolute;
+  margin-top: -20px;
+  left:20px;
+  background-color:white;
+  color: #484848;
+}
+.form-group>input{
+  border:none;
+}
+
+.btnSubmit{
+	background: transparent linear-gradient(110deg, #F2A776 0%, #EF6521 100%) 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 16px #EF6C005F;
+border-radius: 15px;
+opacity: 1;
+width: 400px;
+margin:10px;
+height: 60px;
+color: #FFFFFF;
+}
+.remember{
+	color : #484848;
+	margin-left: 10px;
+}
+#sidebar-header-logo{
+    width: 72px;
+    height: 72px;
+}
+
+/********* =========== End Styles for home page ******************/
 
